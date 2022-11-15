@@ -6,7 +6,7 @@ class Chronometer {
 
   start(printTimeCallback) {
     this.intervalId = setInterval(() => {
-      this.currentTime++;
+      this.currentTime++
     },1000)
   }
 
@@ -19,7 +19,7 @@ class Chronometer {
   }
 
   computeTwoDigitNumber(value) {
-    
+    return value.toString().padStart(2, '0');
   }
 
   stop() {
